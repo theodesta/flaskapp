@@ -1,0 +1,9 @@
+---
+applications:
+    - name: solutionsid
+buildpack: https://github.com/cloudfoundry/python-buildpack.git
+stack: cflinuxfs3
+disk_quota: 300M
+memory: 200M
+services:
+    - solutionsid-db

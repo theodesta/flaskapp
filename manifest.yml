@@ -1,0 +1,18 @@
+---
+applications:
+    - name: dx-api-sandbox
+# path: ./dx-api/
+buildpack: https://github.com/cloudfoundry/python-buildpack.git
+stack: cflinuxfs3
+disk_quota: 300M
+memory: 200M
+services:
+    - dx-api-sql
+#command: python -m pip install --upgrade pip
+# command: python app.py
+#command: bash ./init-app.sh cloud
+#env:
+#    ENVIRONMENT: cloud
+
+
+## THIS IS Teddys Sandbox
